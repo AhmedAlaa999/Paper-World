@@ -1,0 +1,146 @@
+[gd_scene format=3 uid="uid://lnjec81spc1e"]
+
+[ext_resource type="Script" uid="uid://dplbbfdmigf51" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://co3uvpr48fswr" path="res://BGMainmenu.jpg" id="2_0k4wn"]
+[ext_resource type="FontFile" uid="uid://blial41h7twx" path="res://KiwiSoda.ttf" id="2_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://c27ctq646ygh5" path="res://Unsel.png" id="4_glbon"]
+[ext_resource type="Texture2D" uid="uid://bpf5dme3gehjj" path="res://sel.png" id="4_jix8l"]
+[ext_resource type="PackedScene" uid="uid://d051qfeu0ipkp" path="res://Bee.tscn" id="6_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://8e0jxriw6epc" path="res://UI_TravelBook_Select01a.png" id="7_qe12f"]
+[ext_resource type="Texture2D" uid="uid://cm12qsu4j6rd3" path="res://UI_TravelBook_Alert01a.png" id="8_8qtwp"]
+[ext_resource type="Script" uid="uid://bd0nclu2c7tg4" path="res://alert.gd" id="9_dy7ct"]
+[ext_resource type="AudioStream" uid="uid://df78ktcij4ahm" path="res://spring-morning.ogg" id="10_0o4t1"]
+[ext_resource type="AudioStream" uid="uid://djyp3gaqw8370" path="res://emilianodleon-button-ui-sound-effect-395762.mp3" id="11_0k4wn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_glbon"]
+texture = ExtResource("4_glbon")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jix8l"]
+texture = ExtResource("4_jix8l")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8qtwp"]
+texture = ExtResource("4_jix8l")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nlkkf"]
+texture = ExtResource("4_glbon")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dy7ct"]
+texture = ExtResource("4_jix8l")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0o4t1"]
+texture = ExtResource("4_jix8l")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qe12f"]
+texture = ExtResource("4_glbon")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0k4wn"]
+texture = ExtResource("4_jix8l")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j5v2v"]
+texture = ExtResource("4_jix8l")
+
+[node name="MainMenu" type="Control" unique_id=61042166]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1118650099]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -11.0
+offset_top = -2.0
+offset_right = 2.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_0k4wn")
+expand_mode = 1
+
+[node name="GameTitle" type="Label" parent="." unique_id=785356816]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -346.5
+offset_top = 11.0
+offset_right = 346.5
+offset_bottom = 155.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.54509807, 0.22745098, 0.16862746, 1)
+theme_override_colors/font_shadow_color = Color(0.49411765, 0.4392157, 0.43137255, 1)
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 144
+text = "Paper World"
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=939246766]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -1298.0
+offset_top = -111.0
+offset_right = -585.0
+offset_bottom = 170.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="MenuLayout" type="VBoxContainer" parent="CenterContainer" unique_id=1119539042]
+layout_mode = 2
+
+[node name="PlayButton" type="Button" parent="CenterContainer/MenuLayout" unique_id=1907891081]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxTexture_glbon")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_jix8l")
+theme_override_styles/hover = SubResource("StyleBoxTexture_8qtwp")
+text = "PLAY"
+
+[node name="SettingsButton" type="Button" parent="CenterContainer/MenuLayout" unique_id=1202178937]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxTexture_nlkkf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_dy7ct")
+theme_override_styles/hover = SubResource("StyleBoxTexture_0o4t1")
+text = "Settings"
+
+[node name="QuitButton" type="Button" parent="CenterContainer/MenuLayout" unique_id=25491036]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxTexture_qe12f")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_0k4wn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_j5v2v")
+text = "QUIT"
+
+[node name="CharacterBody2D" parent="." unique_id=1197806897 instance=ExtResource("6_nlkkf")]
+position = Vector2(709, 208)
+
+[node name="Select" type="Sprite2D" parent="." unique_id=1218405457]
+position = Vector2(821, 347.00003)
+scale = Vector2(10.800001, 10.033333)
+texture = ExtResource("7_qe12f")
+
+[node name="Alert" type="Sprite2D" parent="." unique_id=1613931352]
+position = Vector2(940, 49)
+scale = Vector2(8.635831, 9.92361)
+texture = ExtResource("8_8qtwp")
+script = ExtResource("9_dy7ct")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=169819942]
+stream = ExtResource("10_0o4t1")
+volume_db = -8.747
+autoplay = true
+
+[node name="ButtonSound" type="AudioStreamPlayer" parent="." unique_id=1967088116]
+stream = ExtResource("11_0k4wn")
+volume_db = 7.776
