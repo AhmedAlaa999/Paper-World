@@ -123,7 +123,7 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_j5v2v")
 text = "QUIT"
 
 [node name="CharacterBody2D" parent="." unique_id=1197806897 instance=ExtResource("6_nlkkf")]
-position = Vector2(709, 208)
+position = Vector2(706, 250)
 
 [node name="Select" type="Sprite2D" parent="." unique_id=1218405457]
 position = Vector2(821, 347.00003)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf2fojlb1cxut"
-path="res://.godot/imported/UI.png-ea010fab2d8cfc28e67b919500cf0a12.ctex"
+uid="uid://cmf0h35eyxrqm"
+path="res://.godot/imported/Tiles-Copy-ezgif.com-crop (3).png-bc2ab38ea6ed63ff2c50661799340869.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Paper-Pixels-8x8/UI.png"
-dest_files=["res://.godot/imported/UI.png-ea010fab2d8cfc28e67b919500cf0a12.ctex"]
+source_file="res://Paper-Pixels-8x8/Tiles-Copy-ezgif.com-crop (3).png"
+dest_files=["res://.godot/imported/Tiles-Copy-ezgif.com-crop (3).png-bc2ab38ea6ed63ff2c50661799340869.ctex"]
 
 [params]
 

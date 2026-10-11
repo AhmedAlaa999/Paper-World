@@ -8,7 +8,7 @@ extends Control
 
 var is_transitioning := false
 
-const GAME_SCENE := "res://Scenes/Game.tscn"
+const GAME_SCENE := "res://main_game.tscn"
 const SETTINGS_SCENE := "res://Scenes/Settings.tscn"
 
 func _ready() -> void:

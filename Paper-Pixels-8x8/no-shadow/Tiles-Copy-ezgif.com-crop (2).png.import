@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvm7fuikp4ejk"
-path="res://.godot/imported/Enemies.png-abaf12495145906add752c4666ea452b.ctex"
+uid="uid://tu5b7j6ojerb"
+path="res://.godot/imported/Tiles-Copy-ezgif.com-crop (2).png-9f4fc6b98672868fd4d934d4b36b5864.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Paper-Pixels-8x8/Enemies.png"
-dest_files=["res://.godot/imported/Enemies.png-abaf12495145906add752c4666ea452b.ctex"]
+source_file="res://Paper-Pixels-8x8/no-shadow/Tiles-Copy-ezgif.com-crop (2).png"
+dest_files=["res://.godot/imported/Tiles-Copy-ezgif.com-crop (2).png-9f4fc6b98672868fd4d934d4b36b5864.ctex"]
 
 [params]
 

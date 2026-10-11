@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://den44tlhaqwh1"
-path="res://.godot/imported/Tiles.png-0e052dd59a1dec7773138bc6fbd00dcb.ctex"
+uid="uid://b5kv8pjytfmjh"
+path="res://.godot/imported/Tiles-Copy-ezgif.com-crop (4).png-cc26e86bf324b65aec30e08d87a8c636.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Paper-Pixels-8x8/Tiles.png"
-dest_files=["res://.godot/imported/Tiles.png-0e052dd59a1dec7773138bc6fbd00dcb.ctex"]
+source_file="res://Paper-Pixels-8x8/no-shadow/Tiles-Copy-ezgif.com-crop (4).png"
+dest_files=["res://.godot/imported/Tiles-Copy-ezgif.com-crop (4).png-cc26e86bf324b65aec30e08d87a8c636.ctex"]
 
 [params]
 
