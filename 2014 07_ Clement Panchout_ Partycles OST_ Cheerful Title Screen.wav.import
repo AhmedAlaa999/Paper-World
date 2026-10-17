@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bp2x5mmkft4qt"
+path="res://.godot/imported/2014 07_ Clement Panchout_ Partycles OST_ Cheerful Title Screen.wav-faaeaf7fca585a78b6f786c25933c467.sample"
+
+[deps]
+
+source_file="res://2014 07_ Clement Panchout_ Partycles OST_ Cheerful Title Screen.wav"
+dest_files=["res://.godot/imported/2014 07_ Clement Panchout_ Partycles OST_ Cheerful Title Screen.wav-faaeaf7fca585a78b6f786c25933c467.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://dwm56l3ms8udh"]
+
+[ext_resource type="Texture2D" uid="uid://dkog1xn1qp3jt" path="res://Paper-Pixels-8x8/no-shadow/Enemies.png" id="1_r4jxn"]
+[ext_resource type="Script" uid="uid://dqmlha3b7x8me" path="res://movement_bee.gd" id="1_rlsy5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rlsy5"]
+atlas = ExtResource("1_r4jxn")
+region = Rect2(32, 12, 8, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v6qiu"]
+atlas = ExtResource("1_r4jxn")
+region = Rect2(40, 12, 8, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wf6ma"]
+atlas = ExtResource("1_r4jxn")
+region = Rect2(48, 12, 8, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_78p8u"]
+atlas = ExtResource("1_r4jxn")
+region = Rect2(56, 12, 8, 12)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dv7cx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rlsy5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v6qiu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wf6ma")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_78p8u")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="MovementBee" type="CharacterBody2D" unique_id=1462566290]
+script = ExtResource("1_rlsy5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1364453920]
+position = Vector2(-0.49999976, -14)
+scale = Vector2(0.87500006, 0.8333334)
+sprite_frames = SubResource("SpriteFrames_dv7cx")
+autoplay = "default"
+frame_progress = 0.84904075

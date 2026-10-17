@@ -1,4 +1,3 @@
-
 extends Sprite2D
 
 @export var min_wait: float = 2.0
@@ -6,6 +5,12 @@ extends Sprite2D
 @export var wind_speed: float = 1.6
 @export var travel_distance: float = 500.0
 @export var fade_time: float = 0.25
+
+@export var sound_fade_in: float = 0.5
+@export var sound_fade_out: float = 1.0
+@export var sound_volume_db: float = -15.0
+
+@onready var wind_audio: AudioStreamPlayer = $wind_audio
 
 var start_position: Vector2
 
@@ -15,26 +20,37 @@ func _ready() -> void:
 	modulate.a = 0.0
 	visible = false
 
+	wind_audio.volume_db = -40.0
+
 	randomize()
 	play_wind_loop()
 
 
 func play_wind_loop() -> void:
 	while true:
-		# Wait before the next wind gust
 		await get_tree().create_timer(
 			randf_range(min_wait, max_wait)
 		).timeout
 
-		# Start from the LEFT (-X)
 		visible = true
 		position = start_position + Vector2(-travel_distance, 0)
 		modulate.a = 0.0
 
-		# Create the animation
+		wind_audio.volume_db = -40.0
+
+		if wind_audio.stream:
+			wind_audio.play()
+
+		var audio_in = create_tween()
+		audio_in.tween_property(
+			wind_audio,
+			"volume_db",
+			sound_volume_db,
+			sound_fade_in
+		)
+
 		var tween = create_tween()
 
-		# Fade in while moving
 		tween.tween_property(
 			self,
 			"modulate:a",
@@ -42,7 +58,6 @@ func play_wind_loop() -> void:
 			fade_time
 		)
 
-		# Move from LEFT to RIGHT
 		tween.parallel().tween_property(
 			self,
 			"position",
@@ -50,7 +65,6 @@ func play_wind_loop() -> void:
 			wind_speed
 		).set_trans(Tween.TRANS_LINEAR)
 
-		# Fade out at the end
 		tween.tween_property(
 			self,
 			"modulate:a",
@@ -58,8 +72,18 @@ func play_wind_loop() -> void:
 			fade_time
 		)
 
-		# Wait until the animation finishes
 		await tween.finished
 
-		# Hide until the next gust
+		var audio_out = create_tween()
+		audio_out.tween_property(
+			wind_audio,
+			"volume_db",
+			-40.0,
+			sound_fade_out
+		)
+
+		await audio_out.finished
+
+		wind_audio.stop()
+		wind_audio.volume_db = -40.0
 		visible = false
