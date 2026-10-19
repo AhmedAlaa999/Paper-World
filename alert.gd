@@ -1,6 +1,5 @@
-
 extends Sprite2D
-
+#Alert System I guess 
 @export var show_time: float = 1.0
 @export var hide_time: float = 1.0
 

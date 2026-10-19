@@ -1,4 +1,3 @@
-
 extends Node2D
 
 @export var normal_speed: float = 45.0

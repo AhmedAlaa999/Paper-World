@@ -1,4 +1,3 @@
-
 extends Control
 
 @onready var play_button: Button = $CenterContainer/MenuLayout/PlayButton
@@ -9,7 +8,7 @@ extends Control
 var is_transitioning := false
 
 const GAME_SCENE := "res://main_game.tscn"
-const SETTINGS_SCENE := "res://Scenes/Settings.tscn"
+const SETTINGS_SCENE := "res://setting_scene.tscn"
 
 func _ready() -> void:
 	play_button.pressed.connect(_on_play_pressed)
@@ -18,6 +17,7 @@ func _ready() -> void:
 
 
 func _on_play_pressed() -> void:
+	GameManager.reset_game()
 	await transition_to_scene(GAME_SCENE)
 
 

@@ -5,7 +5,6 @@ extends Sprite2D
 @export var wind_speed: float = 1.6
 @export var travel_distance: float = 500.0
 @export var fade_time: float = 0.25
-
 @export var sound_fade_in: float = 0.5
 @export var sound_fade_out: float = 1.0
 @export var sound_volume_db: float = -15.0
