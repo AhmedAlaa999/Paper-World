@@ -1,6 +1,6 @@
 # Paper World
 
-**Paper World** is a 2D platformer with endless-runner mechanics where your goal is to collect the key while staying ahead of an automatically accelerating camera. As the camera gets faster, collect apples to boost your movement speed and survive for as long as you can!
+**Paper World** It is a 2D platformer that mixes endless-runner gameplay. Your main goal is to collect the key while staying ahead of a camera that keeps speeding up. As the camera gets faster you can collect apples to boost your speed. Try to survive long as possible!!
 
 ## Gameplay
 
