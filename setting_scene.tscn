@@ -48,15 +48,15 @@ texture = ExtResource("3_u6sx0")
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -110.0
-offset_top = -186.0
-offset_right = 262.0
-offset_bottom = -66.0
+offset_left = -421.0
+offset_top = -173.0
+offset_right = -49.0
+offset_bottom = -53.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.5913976, 0.16668978, 0, 1)
 theme_override_fonts/font = ExtResource("4_q5np5")
 theme_override_font_sizes/font_size = 91
-text = "Settings"
+text = "Rules"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1676187298]
 offset = Vector2(55.71, 31.72)
@@ -80,10 +80,13 @@ text = "Return"
 script = ExtResource("8_sks3u")
 
 [node name="Label" type="Label" parent="." unique_id=223065291]
-offset_left = -152.0
-offset_top = -2.0
-offset_right = 262.0
-offset_bottom = 54.0
+offset_left = -420.0
+offset_top = -94.0
+offset_right = -6.0
+offset_bottom = -38.0
 theme_override_fonts/font = ExtResource("4_q5np5")
 theme_override_font_sizes/font_size = 56
-text = "Nothing Here Srry"
+text = "You should get the key and  run fast 
+before the camera pass you , get the 
+apples to run faster and pass the timer
+of 60 sec"

@@ -8,7 +8,6 @@ extends Sprite2D
 @export var sound_fade_in: float = 0.5
 @export var sound_fade_out: float = 1.0
 @export var sound_volume_db: float = -15.0
-
 @onready var wind_audio: AudioStreamPlayer = $wind_audio
 
 var start_position: Vector2

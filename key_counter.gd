@@ -5,4 +5,4 @@ func _ready() -> void:
 	update_counter()
 
 func update_counter() -> void:
-	text = "Keys: %d / 13" % GameManager.keys_collected
+	text = "Keys: %d / 1" % GameManager.keys_collected

@@ -111,7 +111,7 @@ theme_override_font_sizes/font_size = 90
 theme_override_styles/normal = SubResource("StyleBoxTexture_nlkkf")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_dy7ct")
 theme_override_styles/hover = SubResource("StyleBoxTexture_0o4t1")
-text = "Settings"
+text = "Rules ;)"
 
 [node name="QuitButton" type="Button" parent="CenterContainer/MenuLayout" unique_id=25491036]
 layout_mode = 2
@@ -144,3 +144,14 @@ autoplay = true
 [node name="ButtonSound" type="AudioStreamPlayer" parent="." unique_id=1967088116]
 stream = ExtResource("11_0k4wn")
 volume_db = 7.776
+
+[node name="Update Boost" type="Label" parent="." unique_id=684725853]
+layout_mode = 0
+offset_left = 113.0
+offset_top = 576.0
+offset_right = 430.0
+offset_bottom = 636.0
+theme_override_colors/font_color = Color(1, 0.30588236, 0, 1)
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 59
+text = "Update Boost"

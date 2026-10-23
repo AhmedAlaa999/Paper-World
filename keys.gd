@@ -1,5 +1,5 @@
 extends Area2D
-#Keysto collect
+
 var collected: bool = false
 
 func _on_body_entered(body: Node2D) -> void:
