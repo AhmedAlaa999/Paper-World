@@ -45,5 +45,4 @@ Play Paper World on itch.io: https://ahmedalaa999.itch.io/paper-world
 
 
 ---
-
-*Collect the key. Grab the apples. Stay ahead.*
+BY AHMED ALAA
