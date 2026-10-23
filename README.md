@@ -4,7 +4,7 @@
 
 ## Gameplay
 
-Run, jump, and collect items while keeping up with the camera. The challenge gets harder as the camera gradually accelerates, so every apple can make a difference between winning and losing.
+Run and collect items while keeping up with the camera. The challenge gets harder as the camera gradually accelerates, so every apple can make a difference between winning and losing.
 
 ## How to Play
 
