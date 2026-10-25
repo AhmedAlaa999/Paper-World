@@ -145,6 +145,17 @@ autoplay = true
 stream = ExtResource("11_0k4wn")
 volume_db = 7.776
 
+[node name="Halloween Update" type="Label" parent="." unique_id=1083068163]
+layout_mode = 0
+offset_left = 609.0
+offset_top = 575.0
+offset_right = 1033.0
+offset_bottom = 635.0
+theme_override_colors/font_color = Color(1, 0.30588236, 0, 1)
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 59
+text = "Halloween Update"
+
 [node name="Update Boost" type="Label" parent="." unique_id=684725853]
 layout_mode = 0
 offset_left = 113.0

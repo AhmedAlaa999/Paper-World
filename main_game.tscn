@@ -9,9 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://cmf0h35eyxrqm" path="res://Paper-Pixels-8x8/Tiles-Copy-ezgif.com-crop (3).png" id="5_f52ns"]
 [ext_resource type="PackedScene" uid="uid://dwm56l3ms8udh" path="res://movement_bee.tscn" id="7_f52ns"]
 [ext_resource type="PackedScene" uid="uid://dkh1rf6wpmfcg" path="res://small_boy.tscn" id="8_l5ukw"]
-[ext_resource type="AudioStream" uid="uid://bp2x5mmkft4qt" path="res://2014 07_ Clement Panchout_ Partycles OST_ Cheerful Title Screen.wav" id="9_4srsv"]
 [ext_resource type="Script" uid="uid://dcwuag6xca8la" path="res://muis.gd" id="11_02kkc"]
 [ext_resource type="Script" uid="uid://llrbttnaqf8s" path="res://camera_2d.gd" id="11_vn0ol"]
+[ext_resource type="AudioStream" uid="uid://cj73qs5m46uhn" path="res://nastelbom-halloween-halloween-music-617003.mp3" id="12_wt57k"]
 [ext_resource type="FontFile" uid="uid://blial41h7twx" path="res://KiwiSoda.ttf" id="13_krmtw"]
 [ext_resource type="Script" uid="uid://cq23o3xuu1831" path="res://key_counter.gd" id="15_qpaub"]
 [ext_resource type="PackedScene" uid="uid://b637jdaxwrrw7" path="res://Keys.tscn" id="16_an1vu"]
@@ -22,6 +22,7 @@
 [ext_resource type="Script" uid="uid://svhfsb42q0dl" path="res://returnbutton.gd" id="18_wt57k"]
 [ext_resource type="Script" uid="uid://ceqtbq56vollo" path="res://ready_label.gd" id="21_vn0ol"]
 [ext_resource type="PackedScene" uid="uid://dwhyna7jdf4xi" path="res://apple.tscn" id="22_vn0ol"]
+[ext_resource type="PackedScene" uid="uid://rgmhaj5hrt7" path="res://Halo.tscn" id="23_wt57k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4srsv"]
 texture = ExtResource("1_yx7mw")
@@ -7946,6 +7947,13 @@ position = Vector2(682.99994, -57)
 scale = Vector2(0.8229664, 0.13602552)
 texture = ExtResource("1_yx7mw")
 
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2005129994]
+offset_left = -286.0
+offset_top = -135.0
+offset_right = 1664.0
+offset_bottom = 48.0
+color = Color(0.08235294, 0, 0.46666667, 0.32941177)
+
 [node name="Wind" type="Sprite2D" parent="." unique_id=491286972]
 position = Vector2(-19.999998, -56)
 scale = Vector2(0.7777778, 0.75)
@@ -8021,7 +8029,7 @@ zoom = Vector2(7.045, 7.045)
 script = ExtResource("11_vn0ol")
 
 [node name="Muis" type="AudioStreamPlayer" parent="." unique_id=1714293015]
-stream = ExtResource("9_4srsv")
+stream = ExtResource("12_wt57k")
 autoplay = true
 script = ExtResource("11_02kkc")
 
@@ -8108,3 +8116,15 @@ position = Vector2(329, -24)
 
 [node name="Apple4" parent="." unique_id=373680188 instance=ExtResource("22_vn0ol")]
 position = Vector2(568, -24)
+
+[node name="CharacterBody2D" parent="." unique_id=740287849 instance=ExtResource("23_wt57k")]
+position = Vector2(51, -29)
+
+[node name="CharacterBody2D2" parent="." unique_id=909911604 instance=ExtResource("23_wt57k")]
+position = Vector2(445, -29)
+
+[node name="CharacterBody2D3" parent="." unique_id=1887583229 instance=ExtResource("23_wt57k")]
+position = Vector2(816, -29)
+
+[node name="CharacterBody2D4" parent="." unique_id=1475257489 instance=ExtResource("23_wt57k")]
+position = Vector2(1150, -29)
