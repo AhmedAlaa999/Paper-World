@@ -1,4 +1,4 @@
-# Paper World
+# Paper World-Halloween Update
 
 **Paper World** It is a 2D platformer that mixes endless-runner gameplay. Your main goal is to collect the key while staying ahead of a camera that keeps speeding up. As the camera gets faster you can collect apples to boost your speed. Try to survive long as possible!!
 
@@ -36,7 +36,8 @@ Collect the key, use apples to boost your speed, and stay ahead of the accelerat
 
 ## Screenshots
 
-<img width="1093" height="614" alt="Screenshot (234)" src="https://github.com/user-attachments/assets/80bd9dcf-3108-4c01-80c3-5b3f90ddb151" />
+<img width="1093" height="614" alt="Screenshot (254)" src="https://github.com/user-attachments/assets/1a438deb-5bba-4f6b-99f4-a6f29795b3c1" />
+
 
 
 ## Play the Game
